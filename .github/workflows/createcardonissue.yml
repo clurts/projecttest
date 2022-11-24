@@ -5,7 +5,8 @@ jobs:
   createCard:
     runs-on: ubuntu-latest
     steps:
-      - uses: peter-evans/create-or-update-project-card@v2.0.1
+      - name: Create or Update Project Card
+        uses: peter-evans/create-or-update-project-card@v2
         with:
           project-name: hjemmetest
           column-name: Todo
